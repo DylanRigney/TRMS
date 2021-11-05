@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
+
+    <title>PAGE TITLE</title>
+</head>
+
+<body>
+
+  <div class="container-fluid bg-white">
+    <h1 class="p-3 text-center text-uppercase fw-light text-primary opacity-50">PAGE TITLE</h1>
+  </div>
+  
+   
+      <nav class="navbar navbar-expand-lg navbar-dark bg-gradient bg-secondary ">
+        <div class="container-fluid">
+          <a class="navbar-brand text-white  " href="#">LINK</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
+          <a class="navbar-brand text-lg-start" href="#">LINK</a>
+          
+          <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+               
+                </ul>
+              </li>
+            </ul>
+          </div>
+          
+          <a class="navbar-brand" onclick="signOut()" href="goodbye.html">Sign Out</a>
+        
+        </div>
+      </nav>
+
+      
+      <div class="container-fluid h-100 bg-primary bg-opacity-10 ">
+      
+        
+
+        
+      <span class="container ms-lg-5 text-secondary text-decoration-underline"><h4 class="ms-3">Employee Information</h4></span>
+
+        <div class="input-group w-auto ">
+      
+        <div class="form-floating w-50 mb-lg-4 text-primary">
+          <input type="text" class="form-control  border-2 border-secondary shadow-lg" id="employeeName" placeholder="Name">
+          <label for="nameInput">Employee Name</label>
+        </div> 
+
+        <!--
+        <div class="form-check ms-5 ">
+          <input class="form-check-input  " type="checkbox" value="true" id="hasApproval">
+          <label class="form-check-label text-decoration-underline fw-bold text-secondary" for="hasApproval">
+            Check If You Have A Prior Approval For This Event
+          </label>
+        </div>  
+        -->
+
+        <div class="form-floating w-75 text-primary mb-3">
+          <textarea class="form-control border-2 border-secondary shadow-lg" placeholder="Work Related Justification" id="workJustification"></textarea>
+           <label for="workJustification">Work Related Justification</label>
+        </div> 
+
+      
+
+        <span class="container ms-0 mt-4 mb-4 text-secondary text-decoration-underline"><h4>Event Information</h4></span>
+ 
+        <div class="input-group w-auto ">
+        
+      <select class="form-select mb-4 me-3 w-75 border-2 border-secondary shadow-lg text-primary " id="eventType" aria-label="event selection">
+        <option selected class="alert-secondary font-italic">Please select the type of event you will be attending</option>
+        <option value="1">University Course -               80% Reimbursement</option>
+        <option value="2">Seminar -  60% Reimbursement</option>
+        <option value="3">Certification Preparation Class - 75% Reimbursement</option>
+        <option value="4">Certification -                   100% Reimbursement</option>
+        <option value="5">Technical Training -              90% Reimbursement</option>
+        <option value="6">Other -                           30% Reimbursement</option>
+      </select>
+
+
+      <select class="form-select mb-4 me-3 w-25 border-2 border-secondary shadow-lg text-primary " id="gradingFormat" aria-label="event selection">
+        <option selected class="alert-secondary font-italic">Please select the event grading format</option>
+        <option value="1">Letter Grade</option>
+        <option value="2">Presentation </option>
+       
+      </select>
+
+      <select  class="form-select mb-4 me-3 border-2 border-secondary shadow-lg text-primary w-25 " id="passingGrade" aria-label="event selection">
+        <option selected class="alert-secondary font-italic">Please select the grade needed for successful completion</option>
+        <option value="1">A</option>
+        <option value="2">B</option>
+        <option value="3">C</option>
+        <option value="4">D</option>
+        <option value="5">Presentation / Default Grade</option>
+  
+      </select>
+      
+        <div class="form-floating mb-3 w-100 text-primary">
+          <textarea class="form-control border-2 border-secondary shadow-lg  " placeholder="Event Description" id="eventDescription"></textarea>
+           <label for="eventDescription">Event Description</label>
+        </div>
+        
+        <div class="form-floating mb-3 me-lg-3 text-primary w-50">
+          <input  type="text" class="form-control border-2 border-secondary shadow-lg" id="eventLocation" placeholder="event location">
+          <label for="nameInput">Event Location</label>
+        </div> 
+      
+      </div>
+  
+  
+  <div class="container">
+      <div class="row">
+        <div class="me-5 mt-3 col">
+         
+       
+          <div class="form-floating mt-5 ms mb-4 me-5 w-100 text-primary">
+              <input type="time" class="form-control border-2 border-secondary shadow-lg" id="eventTime" placeholder="Event time">
+              <label for="nameInput">Event Time</label>
+            </div> 
+    
+            <div class="form-floating mb-4 me-5 w-100 text-primary">
+              <input type="date" class="form-control border-2 border-secondary shadow-lg" id="eventDate" placeholder="Event Date">
+              <label for="dateInput">Event Date</label>
+            </div> 
+    
+    
+            <div class="form-floating mb-4 me-5 w-100 text-primary">
+              <input type="number" class="form-control border-2 border-secondary shadow-lg" id="eventCost" placeholder="EventCost">
+              <label for="nameInput">Event Cost</label>
+            </div> 
+        </div>
+        <div class="col align-content-center mt-2 ms-5">
+          
+          <span class="container align-content-end">
+
+              <div class="card " style="width: 30rem; height: 6.9cm;">
+                <div class="card-body">
+                  <h5 class="card-title  text-decoration-underline mb-3">Tuition Reimbursement</h5>
+                  <h6 class="card-subtitle mb-1 text-muted">Subject to Change</h6>
+                  <p style="color: black;" class="card-text" id="projectedReimbusement"> Enter the event type and event cost, then hit calculate to get your projected reimbursement</p>
+                  <div class="align-content-lg-start"><button type="button" class="btn btn-primary mt-1 border-1 border-dark" onclick="calculateReimbursement()">Calculate Reimbursement</button></div>
+                  
+                
+              </div>
+          </span>
+      
+          
+          
+              <button  onclick="buildRequest()" style="height: 1.5cm; width: 5.4cm;" type="submit" class=" btn btn-secondary btn-lg text-center ms-3 mb-5  border-start border-bottom border-black border-3 rounded-3">Submit Request</button>
+          
+        
+
+        </div>
+      </div>
+  </div>
+  
+
+    <script src="jscripts/requestscripts.js"></script>
+    <Script src="jscripts/globalscripts.js"></Script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

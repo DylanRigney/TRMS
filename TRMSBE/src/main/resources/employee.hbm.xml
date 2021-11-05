@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+
+    <class name="com.revature.models.Employee" table="employees">
+        <id name="employeeId" type="int" column="employee_id">
+            <generator class="identity" />
+        </id>
+
+        <property name="name" type="string" column="name"/>
+        <property name="email" type="string" column="email"/>
+        <property name="password" type="string" column="password"/>
+        <property name="isBenco" type="boolean" column="is_benco"/>
+        <property name="deptId" type="int" column="dept_id"/>
+        <property name="supervisorId" type="int" column="supervisor_id"/>
+
+
+
+    </class>
+
+</hibernate-mapping>
+

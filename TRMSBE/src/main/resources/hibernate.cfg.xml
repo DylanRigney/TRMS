@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration SYSTEM "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+    <session-factory>
+
+        <property name="hibernate.connection.driver_class">
+            org.postgresql.Driver
+        </property>
+
+        <property name="hibernate.dialect">
+            org.hibernate.dialect.PostgreSQL10Dialect
+        </property>
+        
+        <property name="hibernate.connection.url">
+            jdbc:postgresql://dylanbase.cph6x3fronbl.us-west-2.rds.amazonaws.com/postgres
+        </property>
+
+        <property name="hibernate.connection.username">
+            dylan
+        </property>
+
+        <property name="hibernate.connection.password">
+            HPcprFgmPpA7gL8
+        </property>
+
+        <property name="show_sql">
+            true
+        </property>
+
+        <property name="hbm2ddl.auto">
+            validate
+        </property>
+
+        <!-- Class Mappings-->
+        <!--<mapping resource="employee.hbm.xml" /> -->
+        <mapping class="com.revature.models.Request"/>
+        <mapping class="com.revature.models.Employee"/>
+        <mapping class="com.revature.models.Department"/>
+        <mapping class="com.revature.models.EventTypes"/>
+        <mapping class="com.revature.models.GradingFormat"/>
+        <mapping class="com.revature.models.Status"/>
+
+    </session-factory>
+</hibernate-configuration>
