@@ -6,29 +6,34 @@ TRMS, or Tuition Reimbursement Management System is a full-stack web application
 
 ## Technologies Used
 
-tech1 version
-tech2 version
-tech3 version
+* tech1 version
+* tech2 version
+* tech3 version
 
 ## Features
 
-List of features ready
+List of features
+
 * feature 1
 * feature 2
 * feature 3
 
 to-do list:
-*improvement
-*improvement
+
+* improvement
+* improvement
 
 ## Getting Started
 
-git clone command
-all the code required to get started 
+all the code required to get started   
 images of what it should look like
 
 ## Usage
 
 Here, you instruct other people on how to use your project after they’ve installed it. This would also be a good place to include screenshots of your project in action.
+
+## License
+
+This project uses the following license: MIT License.
 
 
