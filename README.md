@@ -6,22 +6,32 @@ TRMS, or Tuition Reimbursement Management System is a full-stack web application
 
 ## Technologies Used
 
-* tech1 version
-* tech2 version
-* tech3 version
+* PostgreSQL
+* Java
+* Hibernate
+* JDBC
+* Javalin
+* JUnit4
+* Maven
+* Postman
+* JavaScript
+* HTML
+* CSS
 
 ## Features
 
 List of features
 
-* feature 1
+* Email and password validation against users in the database
 * feature 2
 * feature 3
 
 to-do list:
 
-* improvement
-* improvement
+* Add communication between person a request and those reviewing the request.
+* Add the ability to include attachments with reimbursemetn requests.
+* Improve Layout and design of Pending Requests Page
+* Implement time based features such as auto approving requests that haven't been reviewed in a certain time period.
 
 ## Getting Started
 
@@ -30,7 +40,7 @@ images of what it should look like
 
 ## Usage
 
-Here, you instruct other people on how to use your project after they’ve installed it. This would also be a good place to include screenshots of your project in action.
+Once the project is up and running then you access the front end through the Sign In Page.  Enter a valid email and password(There must be a corresponding user/employee in the database).
 
 ## License
 
