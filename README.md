@@ -23,8 +23,8 @@ TRMS, or Tuition Reimbursement Management System is a full-stack web application
 List of features
 
 * Email and password validation against users in the database
-* feature 2
-* feature 3
+* Dynamically populated list of your reimbursement requests as well as requests that need your approval.
+* Application tracks and manages reimbursement requests from creation to final approval. 
 
 to-do list:
 
