@@ -35,8 +35,7 @@ to-do list:
 
 ## Getting Started
 
-all the code required to get started   
-images of what it should look like
+Run: git clone https://github.com/DylanRigney/TRMS.git.  Then access the hibernate.cfg.xml file, located in resources and enter the appropriate connection information to create a connection to your database. 
 
 ## Usage
 
